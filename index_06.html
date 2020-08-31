@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>4Geeks Academy - Bootstrap 101</title>
+    <style>
+        /* body * {
+            border: 1px solid yellowgreen;
+        } */
+
+        img {
+            height: 100%;
+            width: 100%;
+            max-height: 355px;
+            object-fit: cover;
+            padding: 12px 0;   
+        }
+
+        .logo {
+            font-family: 'Grand Hotel', cursive;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container pb-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
             <a class="navbar-brand" href="#">Navbar</a>
-            <form class="form-inline my-2 my-lg-0 ml-5">
-                <input class="form-control ml-sm-5" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline mx-0 mx-sm-2 mx-md-5 my-2 my-lg-0">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
             </form>
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#"><i class="fas fa-home"></i></a>
-                <a class="nav-item nav-link" href="#"><i class="far fa-paper-plane"></i></a>
-                <a class="nav-item nav-link" href="#"><i class="far fa-compass"></i></a>
-                <a class="nav-item nav-link" href="#"><i class="far fa-heart"></i></a>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span><i class="far fa-user-circle"></i></span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item disabled" href="#"><i class="far fa-user-circle"></i> Profile</a>
-                        <a class="dropdown-item disabled" href="#"><i class="far fa-bookmark"></i> Saved</a>
-                        <a class="dropdown-item disabled" href="#"><i class="fas fa-cog"></i> Settings</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item disabled" href="#">Log out</a>
-                    </div>
+            <div class="d-flex justify-content-end">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav w-100 d-flex justify-content-end">
+                            <a class="nav-item nav-link" href="#"><i class="fas fa-home"></i></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-paper-plane"></i></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-compass"></i></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-heart"></i></a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span><i class="far fa-user-circle"></i></span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item disabled" href="#"><i class="far fa-user-circle"></i> Profile</a>
+                                    <a class="dropdown-item disabled" href="#"><i class="far fa-bookmark"></i> Saved</a>
+                                    <a class="dropdown-item disabled" href="#"><i class="fas fa-cog"></i> Settings</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item disabled" href="#">Log out</a>
+                                </div>
+                            </div>
+                        </div>   
                 </div>
-            </div>
+            </div>        
         </nav>
     
-        <div class="row no-gutters mx-auto text-center row1">
-            <div class="col-4"><img src="https://i.ytimg.com/vi/mAX9qzX_LQU/maxresdefault.jpg" alt=""></div>
-            <div class="col-4"><img src="https://bemorepanda.com/files/2020-04-10/images/879738.jpeg" alt=""></div>
-            <div class="col-4"><img src="https://i.ytimg.com/vi/VB4CCHHYOqY/maxresdefault.jpg" alt=""></div>
-        </div>
-        <div class="row mx-auto text-center row1">
-            <div class="col"><img src="https://i.pinimg.com/originals/57/4c/07/574c078f2d843db29103e796ddd98d3d.jpg" alt=""></div>
-            <div class="col"><img src="https://iruntheinternet.com/lulzdump/images/bored-dog-is-lying-down-12687480045.jpg" alt=""></div>
-            <div class="col"><img src="https://media.gettyimages.com/photos/monkeys-on-moss-covered-stone-against-trees-picture-id1147953148?s=612x612" alt=""></div>
-        </div>
-        <div class="row mx-auto text-center row1">
-            <div class="col"><img src="https://filmdaily.co/wp-content/uploads/2020/04/funny-animals-lede.jpg" alt=""></div>
-            <div class="col"><img src="https://astrotalk.com/astrology-blog/wp-content/uploads/2020/03/funny252520hd.jpg" alt=""></div>
-            <div class="col"><img src="https://i.pinimg.com/564x/e2/01/08/e20108982cdc8659a938c499ea656499.jpg" alt=""></div>
+        <div class="row d-flex no-gutters my-3 mx-auto text-center">
+            <div class="col-4 pr-3"><img src="https://i.ytimg.com/vi/mAX9qzX_LQU/maxresdefault.jpg" alt=""></div>
+            <div class="col-4 px-2"><img src="https://bemorepanda.com/files/2020-04-10/images/879738.jpeg" alt=""></div>
+            <div class="col-4 pl-3"><img src="https://i.ytimg.com/vi/VB4CCHHYOqY/maxresdefault.jpg" alt=""></div>
+       
+            <div class="col-4 pr-3"><img src="https://i.pinimg.com/originals/57/4c/07/574c078f2d843db29103e796ddd98d3d.jpg" alt=""></div>
+            <div class="col-4 px-2"><img src="https://iruntheinternet.com/lulzdump/images/bored-dog-is-lying-down-12687480045.jpg" alt=""></div>
+            <div class="col-4 pl-3"><img src="https://media.gettyimages.com/photos/monkeys-on-moss-covered-stone-against-trees-picture-id1147953148?s=612x612" alt=""></div>
+       
+            <div class="col-4 pr-3"><img src="https://cdn.ebaumsworld.com/mediaFiles/picture/2146605/82584051.jpg" alt=""></div>
+            <div class="col-4 px-2"><img src="https://astrotalk.com/astrology-blog/wp-content/uploads/2020/03/funny252520hd.jpg" alt=""></div>
+            <div class="col-4 pl-3"><img src="https://i.pinimg.com/564x/e2/01/08/e20108982cdc8659a938c499ea656499.jpg" alt=""></div>
         </div> 
         
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
