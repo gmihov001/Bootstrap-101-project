@@ -20,7 +20,11 @@
             object-fit: cover;
             padding: 12px 0;   
         }
-      
+          #feed img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
         .logo {
             font-family: 'Grand Hotel', cursive;
         }
@@ -86,75 +90,29 @@
     </div>
 
     <div class="container pb-3" id="feed">
-        <div class="row zero my-5"></div>
+        
         <div class="card">
-            <div class="header">
-                <span>My first photo</span>
-                <span>12/14</span>
-            </div>
-            <div class="middle">
-                <img src="https://cdn.ebaumsworld.com/mediaFiles/picture/2146605/82584051.jpg"  alt="" />
-            </div>
-            <div class="bottom">
-                <span class="d-block my-2">23 likes</span>
-                <span class="d-block my-3">This is my first photo</span>
-                <div>
-                    <span class="mr-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                    <input class="rounded text-secondary mr-2" placeholder="Comment..."/>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header">
-                <span>My second photo</span>
-                <span>12/13</span>
+            <div class="header py-3 pl-3">
+                <img src="https://images.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png" style="width:40px;height:40px;" class="rounded-circle" alt="">
+                <span class="font-weight-bold my-3">realfunnyanimals</span>
             </div>
             <div class="middle">
                 <img src="https://i.pinimg.com/originals/57/4c/07/574c078f2d843db29103e796ddd98d3d.jpg" alt="" />
             </div>
-            <div class="bottom">
-                <span>23 likes</span>
-                <span>This is my second photo</span>
-                <div>
-                    <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                    <input class="rounded text-secondary" placeholder="Comment..."/>
+            <div class="bottom pl-3">
+                <div class="d-block my-2">
+                    <span class="pr-2"><i class="far fa-heart"></i></span>
+                    <span class="px-1"><i class="far fa-comment"></i></span>
+                    <span class="pl-2"><i class="far fa-paper-plane"></i></span>
                 </div>
+                <span class="d-block my-2 font-weight-bold">3,456,987 likes</span>
+                <div class="d-block my-2">
+                    <span class="font-weight-bold">realfunnyanimals</span> <span>This is my second photo</span>                
+                </div>
+                <span class="d-block my-2 text-secondary">JUNE 23</span>
             </div>
         </div>
-        <div class="card">
-            <div class="header">
-                <span>My third photo</span>
-                <span>12/12</span>
-            </div>
-            <div class="middle">
-                <img src="https://filmdaily.co/wp-content/uploads/2020/05/dog-videos-lede-1300x868.jpg" alt="" />
-            </div>
-            <div class="bottom">
-                <span>23 likes</span>
-                <span>This is my third photo</span>
-                <div>
-                    <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                    <input class="rounded text-secondary" placeholder="Comment..."/>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header">
-                <span>My fourth photo</span>
-                <span>12/10</span>
-            </div>
-            <div class="middle">
-                <img src="https://i.pinimg.com/564x/e2/01/08/e20108982cdc8659a938c499ea656499.jpg" alt="" />
-            </div>
-            <div class="bottom">
-                <span>23 likes</span>
-                <span>This is my fourth photo</span>
-                <div>
-                    <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                    <input class="rounded text-secondary" placeholder="Comment..."/>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
