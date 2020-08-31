@@ -25,7 +25,7 @@
             object-fit: cover;
             padding: 12px 0;   
         }
-          #feed img {
+        #feed img {
             height: auto;
             width: 100%;
             object-fit: cover;
@@ -36,11 +36,11 @@
         i {
             font-size: 1.5rem;
         }
-        a, a:active {
-            color: lightgrey;
+        a {
+            color: darkgrey;
         }
-        a:hover {
-            color: darkgray;
+        a:hover, a:active {
+            color: gray;
         }
         .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
             background-color: darkgray;
@@ -89,7 +89,8 @@
     </div>
     </div>
 
-    <div id="pills">
+    <div class="container">
+        <div id="pills">
         <ul class="nav nav-pills border-top d-flex justify-content-center pt-3 mt-3 mb-1" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#tiles" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
@@ -100,7 +101,7 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="tiles" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="container pb-3">
+            
                 <div class="row d-flex no-gutters my-3 mx-auto text-center">
                     <div class="col-4 pr-3"><img src="https://i.ytimg.com/vi/mAX9qzX_LQU/maxresdefault.jpg" alt=""></div>
                     <div class="col-4 px-2"><img src="https://bemorepanda.com/files/2020-04-10/images/879738.jpeg" alt=""></div>
@@ -114,11 +115,8 @@
                     <div class="col-4 px-2"><img src="https://astrotalk.com/astrology-blog/wp-content/uploads/2020/03/funny252520hd.jpg" alt=""></div>
                     <div class="col-4 pl-3"><img src="https://i.pinimg.com/564x/e2/01/08/e20108982cdc8659a938c499ea656499.jpg" alt=""></div>
                 </div> 
-            </div>
         </div>
         <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="pills-profile-tab">
-        
-            <div class="container pb-3 mx-0 mx-md-auto">
                 <div class="card border-0">
                     <div class="header py-3 pl-3">
                         <img src="https://images.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png" style="width:40px;height:40px;" class="rounded-circle" alt="">
@@ -203,10 +201,9 @@
                         <span class="d-block my-2 text-secondary">JUNE 23</span>
                     </div>
                 </div>
-            </div>
-        
         </div>
         </div>
+    </div>
     </div>   
 
     
